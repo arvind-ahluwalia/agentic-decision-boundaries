@@ -14,6 +14,26 @@ Most AI failures occur when systems:
 
 Decision boundaries solve this by making autonomy **explicit and governable**.
 
+flowchart TD - Autonomy is conditional.
+Agentic systems must route decisions based on confidence, risk, and reversibility — not capability alone.
+
+    A[AI Receives Task or Signal] --> B[Assess Signal Quality & Context]
+
+    B -->|High Confidence<br/>Low Risk| C[ACT]
+    B -->|Moderate Confidence<br/>Reversible Risk| D[ASK / RECOMMEND]
+    B -->|Low Confidence<br/>High Impact| E[ESCALATE]
+    B -->|Insufficient Signal<br/>System Degraded| F[DEFER / FALLBACK]
+
+    C --> G[Autonomous Execution]
+    D --> H[Human Judgment Applied]
+    E --> I[Exception Handling / Senior Review]
+    F --> J[Safe Default Behavior]
+
+    H --> K[Feedback & Learning Signals]
+    I --> K
+    J --> K
+
+
 ## Core decision modes
 ### Act
 - High confidence
