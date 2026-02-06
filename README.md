@@ -1,4 +1,5 @@
-# Agentic Decision Boundaries → When AI should act
+# Agentic Decision Boundaries
+When should the AI act?
 
 Agentic AI is not about maximizing autonomy.
 It is about **placing autonomy precisely where it is safe, valuable, and reversible**.
